@@ -41,6 +41,15 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Details',
+    projects: 'Banking,Telecom,HealthCare'
+     
+  });
+});
+
+
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page'
